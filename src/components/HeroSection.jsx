@@ -3,8 +3,32 @@ import servers from '../assets/icons/servers.png';
 
 const HeroSection = () => {
   return (
-    <div className="relative bg-gradient-to-r from-black to-blue-900 text-white p-10">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+    <div
+      style={{
+        minHeight: "100vh",
+        width: "100vw",
+        backgroundImage: `url(${servers})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        position: "relative",
+        overflow: "hidden",
+      }}
+      className="relative text-white"
+    >
+      {/* Optional overlay for readability */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          width: "100%",
+          height: "100%",
+          background: "linear-gradient(to right, #000 60%, #0f265c 100%)",
+          opacity: 0.85,
+          zIndex: 1,
+        }}
+      />
+      <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center p-10">
         <div className="max-w-xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Performance-driven <br />
@@ -22,12 +46,9 @@ const HeroSection = () => {
             Test your knowledge and potential on a Free 30 Day Demo
           </p>
         </div>
-        <div className="relative mt-10 md:mt-0">
-          <img src={servers} alt="Spreads from 0.0"  />
-          {/* Replace with custom design or animation icons if needed */}
-        </div>
+        {/* Remove the <img src={servers} ... /> here, since it's now the background */}
       </div>
-      <div className="absolute top-20 right-10 bg-[#052844] rounded-xl px-8 py-6 text-center text-white space-y-6 w-60">
+      <div className="absolute top-20 right-10 bg-[#052844] rounded-xl px-8 py-6 text-center text-white space-y-6 w-60 z-20">
         <div>
           <p className="text-xs">TIGHT RAW SPREADS FROM</p>
           <h2 className="text-3xl font-bold">0.0 pips</h2>

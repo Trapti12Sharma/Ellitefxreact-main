@@ -1,4 +1,6 @@
 import React, { useState, useRef } from "react";
+import fplogo from '../assets/icons/fplogo.png';
+
 
 const DROPDOWN_WIDTH = 1300; // px
 const DROPDOWN_LEFT = -430;  // px
@@ -84,24 +86,25 @@ const Navbar = () => {
       {/* Top Links */}
       <div className="flex justify-between px-10 py-2 border-b text-gray-700">
         <div className="flex gap-6">
-          <a href="#" className="hover:underline">Contact</a>
-          <a href="#" className="hover:underline">Webtrader</a>
-          <a href="#" className="hover:underline">20 Years</a>
-          <a href="#" className="hover:underline">Group</a>
+          <a href="#" className="hover:text-sky-400">Contact</a>
+          <a href="#" className="hover:text-sky-400">Webtrader</a>
+          <a href="#" className="hover:text-sky-400">20 Years</a>
+          <a href="#" className="hover:text-sky-400">Group</a>
         </div>
         <div className="flex gap-6">
-          <a href="#" className="hover:underline">EN</a>
-          <a href="#" className="hover:underline">MT5 Mobile Trader</a>
-          <a href="#" className="font-bold hover:underline">Client Portal</a>
+          <a href="#" className="hover:text-sky-400">EN</a>
+          <a href="#" className="hover:text-sky-400">MT5 Mobile Trader</a>
+          <a href="#" className="text-black  hover:text-sky-400" >Client Portal</a>
         </div>
       </div>
 
       {/* Main Navbar */}
-      <nav className="flex justify-between items-center px-10 py-4 bg-white">
+      <nav className="flex justify-between items-center px-6 py-4 bg-white">
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="fpmarkets logo" className="h-8" />
-          <span className="font-semibold text-lg">20 Years</span>
+          {/* <img src="/fplogo.png" alt="fpmarkets logo" className="h-8" /> */}
+          <img src={fplogo} alt="fpmarkets logo" className="h-12 w-auto" />
+          {/* <span className="font-semibold text-small">20 Years</span> */}
         </div>
 
         {/* Menu with Dropdowns */}
