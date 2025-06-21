@@ -1,4 +1,5 @@
 import React from "react";
+import servers from '../assets/icons/servers.png';
 
 const HeroSection = () => {
   return (
@@ -22,11 +23,7 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="relative mt-10 md:mt-0">
-          <img
-            src="/servers.png"
-            alt="servers"
-            className="w-[300px] md:w-[400px]"
-          />
+          <img src={servers} alt="Spreads from 0.0"  />
           {/* Replace with custom design or animation icons if needed */}
         </div>
       </div>

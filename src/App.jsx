@@ -1,5 +1,7 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
+import TradeOptions from "./components/TradeOptions";
+import SpreadsInfo from "./components/SpreadsInfo";
 
 function App() {
   return (
@@ -7,6 +9,8 @@ function App() {
     
       <Navbar />
       <HeroSection />
+      <TradeOptions />
+      <SpreadsInfo />
     </div>
   );
 }
