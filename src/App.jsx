@@ -1,17 +1,15 @@
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import TradeOptions from "./components/TradeOptions";
-import SpreadsInfo from "./components/SpreadsInfo";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import FundingPage from "./components/FundingPage";
+
 
 function App() {
   return (
-    <div className="font-sans">
-    
-      <Navbar />
-      <HeroSection />
-      <TradeOptions />
-      <SpreadsInfo />
-    </div>
+    <Router>
+      <Routes>
+        {/* Baaki routes */}
+        <Route path="/funding" element={<FundingPage />} />
+      </Routes>
+    </Router>
   );
 }
 
